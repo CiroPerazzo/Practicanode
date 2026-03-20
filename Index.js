@@ -27,11 +27,22 @@ async function copiar(origen, destino) {
   }
 }
 
-copiar("./src/modulos/entrada.txt", "./salida.txt")*/
+copiar("./src/modulos/entrada.txt", "./salida.txt")
 
 
 
-import  parsearUrl  from "./src/modulos/url.js";
-const objeto = parsearUrl("http://www.ort.edu.ar:8080/alumnos/index.htm?curso=2022&mes=mayo");
+import  parsearUrl  from "./src/modulos/url.js"
+const objeto = parsearUrl("http://www.ort.edu.ar:8080/alumnos/index.htm?curso=2022&mes=mayo")
 
-console.log(objeto);
+console.log(objeto)
+
+
+console.log(parsearUrl("esto no es una url"))*/
+
+
+
+import obtenerMoneda from "./src/modulos/biblioteca.js";
+
+const moneda = await obtenerMoneda("AR");
+
+console.log(moneda);
